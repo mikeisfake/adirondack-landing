@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 a {
-  @apply text-green-900;
+  @apply text-green-900 hover:text-green-600;
 }
 
 .card {
-  @apply md:shadow p-4 md:mx-3 my-3 md:my-0 text-green-900 text-center w-full;
+  @apply md:shadow p-4 md:mx-3 my-3 md:my-0 text-green-900 text-center w-full bg-white;
 }
 
 .card-container {
-  @apply m-auto grid md:grid-cols-3 grid-rows-3 md:grid-rows-1 md:p-10 md:w-5/6 w-full;
+  @apply m-auto grid md:grid-cols-3 grid-rows-3 md:grid-rows-1 md:p-10 md:w-5/6 w-full gap-6;
 }
 
 .slide {
