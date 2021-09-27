@@ -1,14 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/main.css" />
     <title>ADIRONDACK BANK</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- MAIN NAVIGATION AND PAGE TITLE -->
+    <nav class="flex flex-col md:flex-row md:justify-evenly justify-between items-center p-8 bg-white w-screen">
+      <div class="font-light hidden md:block">Visit <a href="#">adirondackbank.com</a></div>
+      <div class="flex w-full justify-between md:w-auto"> 
+      <div class="relative ml-12">
+        <div
+          class="logo bg-green-900 w-10 h-10 rounded-full absolute -ml-12 flex"
+        >
+          <object
+            class="w-3 ml-2.5"
+            data="./assets/images/branch-left.svg"
+            type=""
+          ></object>
+          <object
+            class="w-2"
+            data="./assets/images/branch-right.svg"
+            type=""
+          ></object>
+        </div>
+        <h1 class="text-center">
+          <span class="font-bold font-serif uppercase tracking-wider">Adirondack Bank</span
+          ><br />
+          <span class="font-thin capitalize text-xs">bank local</span>
+        </h1>
+        </div>
+        <img id="burger" class="w-10 md:hidden" src="./assets/images/menu.svg" alt="">
+        </div>
+      <ul id="menu" class="md:flex hidden">
+        <li class="p-3 font-light text-sm">
+          <a href="#promotions">Promotions & Offers</a>
+        </li>
+        <li class="p-3 font-light text-sm"><a href="#news">Latest News</a></li>
+        <li class="p-3 font-light text-sm">
+          <a href="#locations">Locations</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="carousel">
+      <div class="relative overflow-hidden">
+          <div class="slides-container inline-flex h-4/5 transition-all duration-500">
+              <div class="slide bg-navy">
+                 <object
+          data="./assets/images/computer.svg"
+          class="w-5/6 md:w-auto h-full hidden md:block"
+        ></object>
+        <div class="text-center text-white">
+          <h1 class="md:text-7xl text-4xl font-light mb-5">
+            Cybersecurity <br />
+            <object
+              class="md:w-12 w-6 inline-block"
+              data="./assets/images/lock.svg"
+              type=""
+            ></object>
+            Tips
+          </h1>
+          <p class="font-thin">from Ardirondack Bank</p>
+          <button
+            class="
+              bg-yellow-400
+              text-black
+              py-3
+              px-7
+              mt-10
+              text-xs
+              font-light
+              capitalize
+              rounded-md
+            "
+          >
+            learn more
+          </button>
+        </div> 
+              </div>
+              <div class="slide bg-purple-700"></div>
+              <div class="slide bg-pink-700"></div>
+              <div class="slide bg-yellow-700"></div>
+          </div>
+          <button id="prevBtn" class="nav-btn hover:bg-white hover:bg-opacity-20 transition-all duration-300">
+              <img class="w-4 md:w-auto" src="./assets/images/chevron-left-big.svg"></img>
+          </button>
+          <button id="nextBtn" class="nav-btn right-0 hover:bg-white hover:bg-opacity-20 transition-all duration-300">
+              <img class="w-4 md:w-auto" src="assets/images/chevron-right-big.svg"></img>
+          </button>
+          <div class="indicator-container absolute bottom-0 w-full py-4 flex items-center justify-center">
+              <div class="indicator border md:border-2 border-white md:h-5 md:w-5 h-2 w-2 rounded-full mx-1"></div>
+              <div class="indicator border md:border-2 border-white md:h-5 md:w-5 h-2 w-2 rounded-full mx-1"></div>
+              <div class="indicator border md:border-2 border-white md:h-5 md:w-5 h-2 w-2 rounded-full mx-1"></div>
+              <div class="indicator border md:border-2 border-white md:h-5 md:w-5 h-2 w-2 rounded-full mx-1"></div>
+          </div>
+      </div>
+    </section>
+
+    <section id="promotions">
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="./assets/images/stylish-man-white-shoes-walking-across-city-street.png"
+            alt=""
+          />
+          <h3 class="font-light">Campaign Title</h3>
+          <p class="font-light text-sm mb-6">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
+            ullam!
+          </p>
+
+          <p class="text-xs text-black text-center">Get Started</p><br />
+          
+        <span class="bg-green-900 p-4 py-3 rounded-full">
+          <img class="inline w-3" src="./assets/images/chevron-right.svg" type=""></img>
+        </span>
+        </div>
+
+        <div class="card">
+          <img
+            src="./assets/images/stylish-man-white-shoes-walking-across-city-street.png"
+            alt=""
+          />
+          <h3 class="font-light">Campaign Title</h3>
+          <p class="font-light text-sm mb-6">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
+            ullam!
+          </p>
+
+          <p class="text-xs text-black text-center">Get Started</p><br />
+          
+        <span class="bg-green-900 p-4 py-3 rounded-full">
+          <img class="inline w-3" src="./assets/images/chevron-right.svg" type=""></img>
+        </span>
+        </div>
+
+        <div class="card">
+          <img
+            src="./assets/images/stylish-man-white-shoes-walking-across-city-street.png"
+            alt=""
+          />
+          <h3 class="font-light">Campaign Title</h3>
+          <p class="font-light text-sm mb-6">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
+            ullam!
+          </p>
+
+          <p class="text-xs text-black text-center">Get Started</p><br />
+          
+        <span class="bg-green-900 p-4 py-3 rounded-full">
+          <img class="inline w-3" src="./assets/images/chevron-right.svg" type=""></img>
+        </span>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section id="news">
+      <h1
+        class="
+          bg-green-900
+          text-white text-4xl
+          md:w-2/3
+          p-8
+          flex
+          items-center
+          justify-end
+          md:rounded-r-full
+        "
+      >
+        Top News and Information
+        <span class="ml-8 bg-white p-4 py-3 rounded-full">
+          <img src="./assets/images/chevron-right-green.svg" type=""></img>
+        </span>
+      </h1>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="./assets/images/stylish-man-white-shoes-walking-across-city-street.png"
+            alt=""
+          />
+          <h3>
+            PPP EZ Loan Forgiveness Form - INstructions, Checklist, &
+            Application
+          </h3>
+          <p>
+            You (the Borrower) can apply for forgiveness of your Paycheck
+            Protection Program...
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="./assets/images/stylish-man-white-shoes-walking-across-city-street.png"
+            alt=""
+          />
+          <h3>PPP Loan Program Suspended</h3>
+          <p>
+            The Paycheck Protection Program (PPP) loan program has been
+            suspended. We are no longer able to accept applications.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/images/stylish-man-white-shoes-walking-across-city-street.png"
+            alt=""
+          />
+          <h3>Branch Lobbies Now Open</h3>
+          <p>
+            We're so happy to see you again! Our branches have re-opened
+            effective April 19, 2021, with normal business hours…
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="locations" class="relative mt-24">
+      <h1
+        class="
+          bg-green-900
+          text-white text-4xl
+          md:w-2/3
+          w-full
+          p-8
+          flex
+          flex-col
+          md:flex-row
+          items-center
+          justify-start
+          md:rounded-l-full
+          right-0
+          top-0
+          md:-top-16
+          absolute
+        "
+      >
+        Locations
+        <div class="flex">
+            <input
+              class="font-medium text-base ml-9 capitalize p-2"
+              type="text"
+              placeholder="enter zip"
+            />
     
-</body>
-<script src="index.js"></script>
+            <button class="ml-8 bg-white p-4 py-3 rounded-full">
+              <img src="./assets/images/chevron-right-green.svg" type=""></img>
+            </button>
+        </div>
+      </h1>
+      <iframe
+        class="w-full"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.1553389998835!2d-75.23272928406746!3d43.10125027914413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d94726aa54200f%3A0x1c8f9b7f80fa9982!2s185%20Genesee%20St%2C%20Utica%2C%20NY%2013502!5e0!3m2!1sen!2sus!4v1632542502299!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <footer class=" p-10 py-16 bg-white">
+
+        <div class="title bg-white flex flex-col items-center text-center ">
+            <div
+          class="logo bg-green-900 w-10 h-10 rounded-full flex mb-1"
+        >
+          <object
+            class="w-3 ml-2.5"
+            data="./assets/images/branch-left.svg"
+            type=""
+          ></object>
+          <object
+            class="w-2"
+            data="./assets/images/branch-right.svg"
+            type=""
+          ></object>
+        </div>
+            <h1 class="border-b border-black pb-5 px-10">    
+              <span class="font-bold font-serif uppercase tracking-wider">Adirondack Bank</span
+              ><br />
+              <span class="font-thin capitalize text-xs">bank local</span>
+            </h1>
+           
+        </div>
+
+        <div class="info grid md:grid-cols-3 md:grid-rows-1 grid-rows-3 items-center">
+            <div class="flex flex-col justify-end">
+                <img class="w-16" src="./assets/images/FDIC.svg" alt="">
+                <ul class="font-light mt-5">
+                    <li class="md:inline mr-3 text-sm"><a href="#">Privacy Policy</a></li>
+                    <li class="md:inline mr-3 text-sm"><a href="#">Cookie Policy</a></li>
+                    <li class="md:inline mr-3 text-sm"><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+             <p class="font-light py-10 text-center order-first">185 Genesee Street</br> Utica, NY 13501</p>
+             <div class="flex md:items-end md:justify-end">
+                <p class="font-light">Digital by TRAINOR</p>
+            </div>
+        </div>
+
+        
+
+    </footer>
+  </body>
+  <script src="index.js"></script>
 </html>
