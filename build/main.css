@@ -2393,6 +2393,10 @@ a:hover {
     top: -4rem;
   }
 
+  .md\:order-none {
+    order: 0;
+  }
+
   .md\:block {
     display: block;
   }

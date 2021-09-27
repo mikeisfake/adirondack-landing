@@ -35,6 +35,7 @@
         </div>
         <img id="burger" class="w-10 md:hidden" src="./assets/images/menu.svg" alt="">
         </div>
+        <!-- NAVIGATION LINKS -->
       <ul id="menu" class="md:flex hidden">
         <li class="p-3 font-light text-sm">
           <a href="#promotions">Promotions & Offers</a>
@@ -45,7 +46,7 @@
         </li>
       </ul>
     </nav>
-
+      <!-- IMAGE CAROUSEL  -->
     <section id="carousel">
       <div class="relative overflow-hidden">
           <div class="slides-container inline-flex h-4/5 transition-all duration-500">
@@ -82,16 +83,19 @@
           </button>
         </div> 
               </div>
+              <!-- additional blank placeholder slides  -->
               <div class="slide bg-purple-700"></div>
               <div class="slide bg-pink-700"></div>
               <div class="slide bg-yellow-700"></div>
           </div>
+          <!-- slide navigation buttons -->
           <button id="prevBtn" class="nav-btn hover:bg-white hover:bg-opacity-20 transition-all duration-300">
               <img class="w-4 md:w-auto" src="./assets/images/chevron-left-big.svg"></img>
           </button>
           <button id="nextBtn" class="nav-btn right-0 hover:bg-white hover:bg-opacity-20 transition-all duration-300">
               <img class="w-4 md:w-auto" src="assets/images/chevron-right-big.svg"></img>
           </button>
+          <!-- slide indicator dots  -->
           <div class="indicator-container absolute bottom-0 w-full py-4 flex items-center justify-center">
               <div class="indicator border md:border-2 border-white md:h-5 md:w-5 h-2 w-2 rounded-full mx-1"></div>
               <div class="indicator border md:border-2 border-white md:h-5 md:w-5 h-2 w-2 rounded-full mx-1"></div>
@@ -100,7 +104,10 @@
           </div>
       </div>
     </section>
-<div class="relative">
+
+<!-- this is a wrapper to allow the big watermark to be absolutely positioned. it contains the promotions and news sections  -->
+<div class="relative"> 
+  <!-- PROMOTIONS CARDS -->
     <section id="promotions">
       <div class="card-container">
         <div class="card">
@@ -160,10 +167,10 @@
         </span>
         </div>
 
-        
       </div>
     </section>
 
+    <!-- NEWS  -->
     <section id="news">
       <h1
         class="
@@ -248,7 +255,7 @@
         "
       >
         Locations
-        <div class="flex">
+        <form class="flex">
             <input
               class="font-medium text-base ml-9 capitalize p-2"
               type="text"
@@ -258,8 +265,9 @@
             <button class="ml-8 bg-white p-4 py-3 rounded-full">
               <img src="./assets/images/chevron-right-green.svg" type=""></img>
             </button>
-        </div>
+          </form>
       </h1>
+      <!-- google map with main location pinned -->
       <iframe
         class="w-full"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.1553389998835!2d-75.23272928406746!3d43.10125027914413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d94726aa54200f%3A0x1c8f9b7f80fa9982!2s185%20Genesee%20St%2C%20Utica%2C%20NY%2013502!5e0!3m2!1sen!2sus!4v1632542502299!5m2!1sen!2sus"
@@ -306,7 +314,7 @@
                 </ul>
             </div>
 
-             <p class="font-light py-10 text-center order-first">185 Genesee Street</br> Utica, NY 13501</p>
+             <p class="font-light py-10 text-center order-first md:order-none">185 Genesee Street</br> Utica, NY 13501</p>
              <div class="flex md:items-end md:justify-end">
                 <p class="font-light">Digital by TRAINOR</p>
             </div>
