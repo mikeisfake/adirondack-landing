@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+  @apply text-green-900;
+}
+
+.card {
+  @apply md:shadow p-4 md:mx-3 my-3 md:my-0 text-green-900 text-center w-full;
+}
+
+.card-container {
+  @apply m-auto grid md:grid-cols-3 grid-rows-3 md:grid-rows-1 md:p-10 md:w-5/6 w-full;
+}
+
+.slide {
+  @apply flex md:flex-row flex-col py-10 w-screen items-center md:justify-around md:h-80-screen;
+}
+
+.nav-btn {
+  @apply absolute h-full top-1/2  transform -translate-y-1/2 px-5;
+}
