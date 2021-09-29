@@ -11,7 +11,7 @@ a {
 }
 
 .card-container {
-  @apply m-auto grid md:grid-cols-3 grid-rows-3 md:grid-rows-1 md:p-10 md:w-5/6 w-full gap-6;
+  @apply m-auto grid md:grid-cols-3 grid-rows-3 md:grid-rows-1 md:p-10 w-full gap-6;
 }
 
 .slide {
